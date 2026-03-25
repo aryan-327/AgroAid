@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgroAid Analysis &amp; Upload Section</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=DM+Sans:wght@400;500;700&amp;family=DM+Mono:wght@400;500&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#394328",
+                        "background-light": "#F5F0E8",
+                        "background-dark": "#1a1c16",
+                        "parchment": "#F5F0E8",
+                        "beige-pale": "#EDE5D0",
+                        "olive-dark": "#3A4428",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                        "sans": ["DM Sans", "sans-serif"],
+                        "mono": ["DM Mono", "monospace"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: #F5F0E8;
+        }
+        .serif-font { font-family: 'Playfair Display', serif; }
+        .mono-font { font-family: 'DM Mono', monospace; }
+        .border-fine { border-width: 0.5px; }
+        .border-dashed-fine { border-width: 1.5px; }
+    </style>
+</head>
+<body class="bg-background-light text-slate-900 min-h-screen">
+<div class="max-w-[1200px] mx-auto px-6 py-10">
+<!-- Header Section -->
+<header class="mb-12">
+<div class="flex items-center justify-between mb-16">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">eco</span>
+<span class="text-primary font-bold text-xl tracking-tight">AgroAid</span>
+</div>
+<nav class="flex items-center gap-10">
+<a class="text-sm font-medium text-primary/80 hover:text-primary transition-colors" href="#">Dashboard</a>
+<a class="text-sm font-medium text-primary/80 hover:text-primary transition-colors" href="#">Analysis</a>
+<a class="text-sm font-medium text-primary/80 hover:text-primary transition-colors" href="#">Archive</a>
+<div class="h-8 w-[1px] bg-primary/10"></div>
+<button class="bg-primary text-white px-6 py-2 rounded-full text-sm font-bold tracking-wide">
+                        NEW ANALYSIS
+                    </button>
+</nav>
+</div>
+<div class="space-y-2">
+<p class="mono-font text-[11px] uppercase tracking-[0.2em] text-primary/60">Step 01 — Upload</p>
+<h1 class="serif-font text-[48px] text-olive-dark leading-tight">Show us the leaf.</h1>
+</div>
+</header>
+<!-- Upload Zone -->
+<section class="mb-16">
+<div class="bg-beige-pale border-dashed-fine border-primary/30 rounded-[24px] py-20 flex flex-col items-center justify-center transition-all hover:border-primary/50 group">
+<div class="w-16 h-16 rounded-full bg-primary/5 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">upload_file</span>
+</div>
+<p class="text-olive-dark text-lg font-medium mb-8">Drag &amp; drop your leaf image here</p>
+<div class="flex gap-4">
+<button class="flex items-center gap-2 px-8 py-3 rounded-full border border-primary/40 text-primary text-sm font-bold hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+                        Open Camera
+                    </button>
+<button class="flex items-center gap-2 px-8 py-3 rounded-full border border-primary/40 text-primary text-sm font-bold hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-[20px]">file_upload</span>
+                        Upload from Device
+                    </button>
+</div>
+<p class="mono-font text-[10px] text-primary/40 uppercase mt-6 tracking-widest">Supported: JPG, PNG, RAW</p>
+</div>
+</section>
+<!-- Analysis Results Panel -->
+<section class="mb-8">
+<div class="bg-beige-pale border-fine border-primary/20 rounded-[20px] overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-3 divide-x divide-primary/10 border-b border-primary/10">
+<!-- Column 1: Your Leaf -->
+<div class="p-8">
+<p class="mono-font text-[11px] text-primary/50 uppercase tracking-widest mb-6">Uploaded Image</p>
+<div class="relative aspect-square rounded-lg overflow-hidden border-fine border-primary/10 mb-4">
+<img class="w-full h-full object-cover" data-alt="Close up of a tomato leaf with spots" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvJvabiwA0p0oLy7TSV6NmAgwDGIcPKFopoiBuf_koWDBl0vkfBoFOVhddjT0eJGzxuKzUu505TgT7jLJytwxIV1xzmsfjFExOJQh8ZjwKy7tLYYIKsb-jrBDkLsAf7ICf2PpwQBlO8Wodvx1k0gZcpRJw_6WRLmnPaLMHY95qt34gNTA-aeMn90ToFw9MswnPLtRLGOsv7vRLvDwvEUX4HfNucHJT7S3Orv70P1XdVJDMHQVgYlD-LfEak2UWwwSTi45dpVPK3Ds"/>
+<div class="absolute top-4 right-4">
+<span class="bg-primary text-white mono-font text-[10px] px-3 py-1 rounded-full uppercase">Tomato</span>
+</div>
+</div>
+</div>
+<!-- Column 2: Heat Map -->
+<div class="p-8">
+<p class="mono-font text-[11px] text-primary/50 uppercase tracking-widest mb-6">Disease Region Map</p>
+<div class="relative aspect-square rounded-lg overflow-hidden border-fine border-primary/10 mb-4 bg-slate-200">
+<!-- Simulated Heatmap Overlay -->
+<img class="w-full h-full object-cover opacity-60" data-alt="Tomato leaf with a heat map overlay highlighting diseased areas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHqkKFTeqp7sxIA4yUePNT9IOkljktzX8Zo5CJps9p_AVI4Qawntsu18c2oyhV8CdsHluSKnWrHgUnKfSZ941xxWNQVtjFATnP9Vh-cmd6anlHkKTPV6cPlqJP27exI8fiFCbvPjyUi6tPaH-6WhMTh8qJYkHYVaZyJz1lVgVPYJDKnC12IXav4o_Q5DOBQiinXCUysDpEoPLujwJczCT2Ez4jrYI1PRlqOStZ_nIQEZlzoqJ6IBITh5N6pcVfOVPLiBgFIvYT4M4"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-red-500/40 via-yellow-400/30 to-transparent mix-blend-overlay"></div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-red-500"></div>
+<span class="mono-font text-[10px] text-primary/60">High Confidence Zone</span>
+</div>
+</div>
+</div>
+<!-- Column 3: Reference -->
+<div class="p-8">
+<p class="mono-font text-[11px] text-primary/50 uppercase tracking-widest mb-6">Reference Case</p>
+<div class="relative aspect-square rounded-lg overflow-hidden border-fine border-primary/10 mb-4">
+<img class="w-full h-full object-cover grayscale-[0.2]" data-alt="Standard reference image of tomato early blight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC63ivYGv5LOyhQVcIiYON35iexRkgXQIeubBNWMlo93v4wm3aWyOlREEyr52eqZP4_us3JTadBKmcH18ROR2RTVFFCH51mpzTISr7az4P8ntG1EHRB8syEv9i63oMN3lDuHlEc6jF5d5PFQFde6DBd9ah0TIcBPPeckYBYZ2uIymjMb1t-BpAIq0dDUPBPAW7DSqxlVJYuA9e3rIow99oPdfGB5IAI6CUurhpg5iAyVa3ep-gWhPPpaVtLbVE9BeekQrsUW3K6V-A"/>
+<div class="absolute top-4 right-4">
+<span class="bg-[#e2dcc8] text-primary border border-primary/20 mono-font text-[10px] px-3 py-1 rounded-full uppercase">96.4% Match</span>
+</div>
+</div>
+<p class="serif-font italic text-lg text-olive-dark">Early Blight</p>
+</div>
+</div>
+<!-- Confidence Display Section -->
+<div class="p-10 bg-white/30">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-1">
+<h2 class="serif-font text-[32px] text-olive-dark leading-none">Early Blight</h2>
+<p class="text-primary/60 italic font-sans text-lg">Alternaria solani</p>
+</div>
+<div class="flex-1 max-w-md w-full">
+<div class="flex justify-between items-end mb-2">
+<span class="mono-font text-[11px] text-primary/50 uppercase tracking-widest">Confidence Score</span>
+<span class="mono-font text-lg font-bold text-primary">96.4%</span>
+</div>
+<div class="w-full h-[2px] bg-primary/10 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 96.4%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Note -->
+<footer class="flex justify-between items-center py-6 border-t border-primary/10">
+<p class="mono-font text-[10px] text-primary/40 uppercase tracking-widest">Report Generated 24 Oct 2023 — 14:20 GMT</p>
+<div class="flex gap-4">
+<button class="text-primary/60 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+<button class="text-primary/60 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+<button class="text-primary/60 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">print</span>
+</button>
+</div>
+</footer>
+</div>
+</body></html>

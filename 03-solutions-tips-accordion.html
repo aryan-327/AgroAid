@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgroAid Treatment Solutions</title>
+<!-- Tailwind CSS v3 with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Playfair Display (Serif), Inter (Sans), JetBrains Mono (Mono) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400;500&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<!-- BEGIN: Custom Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            parchment: '#F5F0E8',
+            sandstone: '#D4C4A0',
+            olive: {
+              DEFAULT: '#556B2F',
+              light: '#8A9A5B',
+              dark: '#3B4A20',
+            },
+            cream: '#FCFAF7',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+        },
+      },
+    }
+  </script>
+<!-- END: Custom Tailwind Configuration -->
+<style data-purpose="custom-typography">
+    .font-serif { font-family: 'Playfair Display', serif; }
+    .font-sans { font-family: 'Inter', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-parchment text-slate-800 min-h-screen py-12 px-6 lg:px-20">
+<main class="max-w-7xl mx-auto space-y-16">
+<!-- BEGIN: Solution Cards Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8" data-purpose="solution-cards">
+<!-- Card 1: Clinical Plan -->
+<article class="bg-cream border-[0.5px] border-olive/30 rounded-[16px] p-8 shadow-sm flex flex-col h-full">
+<div class="h-1 w-24 bg-olive mb-6"></div>
+<div class="flex items-center gap-3 mb-6">
+<span class="text-2xl">🧪</span>
+<h2 class="font-mono text-sm tracking-widest uppercase text-olive/80">Rx TREATMENT PLAN</h2>
+</div>
+<div class="space-y-6 flex-grow">
+<div>
+<label class="font-mono text-[10px] uppercase text-olive/60 block mb-1">Recommended Fungicide</label>
+<p class="font-serif text-xl text-olive-dark">Chlorothalonil or Mancozeb</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="font-mono text-[10px] uppercase text-olive/60 block mb-1">Dosage</label>
+<p class="font-sans text-sm">2.5g per Litre of water</p>
+</div>
+<div>
+<label class="font-mono text-[10px] uppercase text-olive/60 block mb-1">Frequency</label>
+<p class="font-sans text-sm">Every 7-10 days</p>
+</div>
+</div>
+<div>
+<label class="font-mono text-[10px] uppercase text-olive/60 block mb-1">Application Method</label>
+<p class="font-sans text-sm leading-relaxed">Foliar spray; ensure complete coverage of both upper and lower leaf surfaces during early morning hours.</p>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-olive/10">
+<div class="flex items-start gap-3 bg-red-50/50 p-4 rounded-lg">
+<span class="text-red-700 text-xs">⚠️</span>
+<p class="text-[11px] font-sans text-red-900 leading-tight">SAFETY NOTE: Wear protective gloves and mask. Avoid application 14 days prior to harvest. Keep away from water sources.</p>
+</div>
+</div>
+</article>
+<!-- Card 2: Natural Remedy -->
+<article class="bg-cream border-[0.5px] border-olive/30 rounded-[16px] p-8 shadow-sm flex flex-col h-full">
+<div class="h-1 w-24 bg-sandstone mb-6"></div>
+<div class="flex items-center gap-3 mb-6">
+<span class="text-2xl">🌿</span>
+<h2 class="font-mono text-sm tracking-widest uppercase text-olive/80">HOME REMEDY</h2>
+</div>
+<div class="space-y-6 flex-grow">
+<div>
+<label class="font-mono text-[10px] uppercase text-olive/60 block mb-1">Root Cause</label>
+<p class="font-serif text-xl text-olive-dark">Excessive Humidity &amp; Poor Airflow</p>
+</div>
+<div class="space-y-4">
+<div>
+<p class="font-sans text-sm"><span class="font-semibold text-olive">Immediate:</span> Prune infected lower leaves and dispose of them far from the garden site.</p>
+</div>
+<div>
+<p class="font-sans text-sm"><span class="font-semibold text-olive">Environmental:</span> Switch to drip irrigation to keep foliage dry; increase spacing between plants.</p>
+</div>
+<div>
+<p class="font-sans text-sm"><span class="font-semibold text-olive">Prevention:</span> Apply a 1:9 milk-to-water solution spray as a mild natural antiseptic for surrounding healthy plants.</p>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-olive/10 flex justify-end">
+<button class="font-mono text-[11px] uppercase tracking-tighter border border-olive px-4 py-2 hover:bg-olive hover:text-white transition-colors">Download PDF Guide</button>
+</div>
+</article>
+</section>
+<!-- END: Solution Cards Section -->
+<!-- BEGIN: Plant Tips Strip -->
+<section class="space-y-8" data-purpose="plant-tips">
+<div class="flex items-center justify-between">
+<h3 class="font-serif text-2xl text-olive-dark">Care Notes for Potato</h3>
+<div class="h-px flex-grow mx-8 bg-olive/20"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+<!-- Tip 1 -->
+<div class="w-[240px] h-[320px] bg-sandstone rounded-sm overflow-hidden flex flex-col group hover:shadow-xl transition-shadow duration-500">
+<div class="h-1/2 flex items-center justify-center p-8 bg-olive/5 relative">
+<!-- Minimal Geometric Illustration Placeholder -->
+<svg class="w-24 h-24 text-olive/40" viewbox="0 0 100 100">
+<circle cx="50" cy="70" fill="currentColor" opacity="0.5" r="15"></circle>
+<path d="M50 20 Q60 40 50 60 Q40 40 50 20" fill="currentColor"></path>
+<path d="M50 55 L50 85" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+<div class="h-1/2 p-6 flex flex-col justify-center text-olive-dark">
+<h4 class="font-serif text-xl mb-2">Hilling</h4>
+<p class="font-sans text-xs leading-relaxed opacity-80">Mound soil around stems to prevent tubers from turning green and bitter due to light exposure.</p>
+</div>
+</div>
+<!-- Tip 2 -->
+<div class="w-[240px] h-[320px] bg-sandstone rounded-sm overflow-hidden flex flex-col group hover:shadow-xl transition-shadow duration-500">
+<div class="h-1/2 flex items-center justify-center p-8 bg-olive/5">
+<svg class="w-24 h-24 text-olive/40" viewbox="0 0 100 100">
+<rect fill="currentColor" height="40" opacity="0.3" width="30" x="35" y="40"></rect>
+<path d="M50 15 L50 40 M30 30 L70 30" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+<div class="h-1/2 p-6 flex flex-col justify-center text-olive-dark">
+<h4 class="font-serif text-xl mb-2">Harvest Timing</h4>
+<p class="font-sans text-xs leading-relaxed opacity-80">Wait until the foliage dies back completely. This allows the skins to thicken for better storage.</p>
+</div>
+</div>
+<!-- Tip 3 -->
+<div class="w-[240px] h-[320px] bg-sandstone rounded-sm overflow-hidden flex flex-col group hover:shadow-xl transition-shadow duration-500">
+<div class="h-1/2 flex items-center justify-center p-8 bg-olive/5">
+<svg class="w-24 h-24 text-olive/40" viewbox="0 0 100 100">
+<path d="M20 80 L80 80 L70 40 L30 40 Z" fill="currentColor" opacity="0.4"></path>
+<circle cx="50" cy="50" fill="currentColor" r="5"></circle>
+</svg>
+</div>
+<div class="h-1/2 p-6 flex flex-col justify-center text-olive-dark">
+<h4 class="font-serif text-xl mb-2">Storage</h4>
+<p class="font-sans text-xs leading-relaxed opacity-80">Keep in a dark, cool, and well-ventilated place. Never store potatoes with onions or apples.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Plant Tips Strip -->
+<!-- BEGIN: Supported Diseases Accordion -->
+<section class="max-w-4xl mx-auto" data-purpose="supported-diseases">
+<h2 class="font-serif text-[36px] text-olive-dark mb-10 text-center">What AgroAid Can Detect</h2>
+<div class="border-t border-olive/20">
+<!-- Pepper (Closed) -->
+<div class="border-b border-olive/20 py-6 flex justify-between items-center cursor-pointer group">
+<span class="font-serif text-xl text-olive-dark/60 group-hover:text-olive-dark transition-colors">Pepper (Capsicum)</span>
+<span class="text-olive/40 group-hover:text-olive transition-transform">+</span>
+</div>
+<!-- Potato (Expanded) -->
+<div class="border-b border-olive/20 py-8">
+<div class="flex justify-between items-center mb-6 cursor-pointer">
+<span class="font-serif text-2xl text-olive-dark">Potato (Solanum tuberosum)</span>
+<span class="text-olive">−</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="p-4 rounded border border-red-100 bg-red-50/20">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-2 h-2 rounded-full bg-red-500"></div>
+<h5 class="font-mono text-[11px] font-bold uppercase text-red-700">Early Blight</h5>
+</div>
+<p class="font-sans text-xs text-slate-600">Concentric rings appearing as "target-like" brown spots on older leaves.</p>
+</div>
+<div class="p-4 rounded border border-yellow-200 bg-yellow-50/20">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-2 h-2 rounded-full bg-yellow-500"></div>
+<h5 class="font-mono text-[11px] font-bold uppercase text-yellow-700">Late Blight</h5>
+</div>
+<p class="font-sans text-xs text-slate-600">Dark, water-soaked patches that spread rapidly in cool, wet conditions.</p>
+</div>
+<div class="p-4 rounded border border-green-200 bg-green-50/20">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-2 h-2 rounded-full bg-green-500"></div>
+<h5 class="font-mono text-[11px] font-bold uppercase text-green-700">Healthy</h5>
+</div>
+<p class="font-sans text-xs text-slate-600">Lush green foliage with no visible lesions, yellowing, or structural wilting.</p>
+</div>
+</div>
+</div>
+<!-- Tomato (Closed) -->
+<div class="border-b border-olive/20 py-6 flex justify-between items-center cursor-pointer group">
+<span class="font-serif text-xl text-olive-dark/60 group-hover:text-olive-dark transition-colors">Tomato (Solanum lycopersicum)</span>
+<span class="text-olive/40 group-hover:text-olive transition-transform">+</span>
+</div>
+</div>
+</section>
+<!-- END: Supported Diseases Accordion -->
+<!-- BEGIN: Footer Branding -->
+<footer class="text-center pt-12 border-t border-olive/10">
+<div class="font-serif italic text-2xl text-olive-dark opacity-40">AgroAid</div>
+<p class="font-mono text-[10px] mt-2 text-olive/40 uppercase tracking-[0.2em]">Precision Agriculture Intelligence</p>
+</footer>
+<!-- END: Footer Branding -->
+</main>
+</body></html>

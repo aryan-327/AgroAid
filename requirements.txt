@@ -1,0 +1,14 @@
+# AgroAid Backend Dependencies
+# Python 3.9+
+
+# Web Framework
+Flask==3.0.0
+Flask-CORS==4.0.0
+
+# Machine Learning & Image Processing
+tensorflow==2.21.0
+numpy>=2.0.0
+Pillow==11.0.0
+
+# Optional: for development
+python-dotenv==1.0.0

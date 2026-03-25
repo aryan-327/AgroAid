@@ -1,0 +1,80 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	new file:   _ul
+#	modified:   app.py
+#	new file:   docs/AgroAid.docx
+#	new file:   docs/AgroAid.pdf
+#	new file:   docs/AgroAid_Learning_Project_Report.docx
+#	new file:   docs/FinalMockMateReport.pdf
+#	new file:   docs/Learning  Project-II  Review Report-2.docx
+#	new file:   docs/Learning Project Annexure-3(CSE,DS,AIML).docx
+#	new file:   docs/Learning Project-II Annexure-4-CSE-DS.docx
+#	new file:   docs/Synopsis of AgroAid.docx
+#	new file:   docs/agro_aid_report_final.docx
+#	new file:   docs/report-agro aid.docx
+#	new file:   docs/report-agro aid.pdf
+#	new file:   docs/test 2.jpg
+#	new file:   docs/test 3.jpg
+#	new file:   docs/test.jpg
+#	modified:   frontend/src/App.css
+#	modified:   frontend/src/App.jsx
+#	modified:   frontend/src/components/DiseaseDatabase.jsx
+#	new file:   frontend/src/components/DiseaseStory.jsx
+#	modified:   frontend/src/components/Hero.jsx
+#	modified:   frontend/src/components/PlantTips.jsx
+#	modified:   frontend/src/components/ResultsPanel.jsx
+#	modified:   frontend/src/components/UploadModule.jsx
+#	new file:   frontend/src/data/diseaseInfo.js
+#	modified:   frontend/src/data/disease_solutions.json
+#	modified:   frontend/src/locales/hi.json
+#	modified:   frontend/src/locales/od.json
+#	modified:   frontend/src/services/api.js
+#	modified:   frontend/vite.config.js
+#	new file:   generate_disease_info.py
+#	new file:   package-lock.json
+#	new file:   test_api.py
+#	new file:   test_gradcam.py
+#	new file:   test_image.jpg
+#	new file:   tmpclaude-06ed-cwd
+#	new file:   tmpclaude-0cc6-cwd
+#	new file:   tmpclaude-1848-cwd
+#	new file:   tmpclaude-1b0a-cwd
+#	new file:   tmpclaude-1c04-cwd
+#	new file:   tmpclaude-1c40-cwd
+#	new file:   tmpclaude-3932-cwd
+#	new file:   tmpclaude-3cab-cwd
+#	new file:   tmpclaude-44a5-cwd
+#	new file:   tmpclaude-4866-cwd
+#	new file:   tmpclaude-5499-cwd
+#	new file:   tmpclaude-5790-cwd
+#	new file:   tmpclaude-6632-cwd
+#	new file:   tmpclaude-6b59-cwd
+#	new file:   tmpclaude-722a-cwd
+#	new file:   tmpclaude-73f1-cwd
+#	new file:   tmpclaude-817b-cwd
+#	new file:   tmpclaude-8223-cwd
+#	new file:   tmpclaude-82d8-cwd
+#	new file:   tmpclaude-85e7-cwd
+#	new file:   tmpclaude-8b18-cwd
+#	new file:   tmpclaude-972c-cwd
+#	new file:   tmpclaude-9745-cwd
+#	new file:   tmpclaude-ac5a-cwd
+#	new file:   tmpclaude-afa1-cwd
+#	new file:   tmpclaude-b29e-cwd
+#	new file:   tmpclaude-b2f6-cwd
+#	new file:   tmpclaude-ba8f-cwd
+#	new file:   tmpclaude-ceab-cwd
+#	new file:   tmpclaude-d457-cwd
+#	new file:   tmpclaude-e29e-cwd
+#	new file:   tmpclaude-e53b-cwd
+#	new file:   tmpclaude-eaea-cwd
+#	new file:   tmpclaude-eba8-cwd
+#	new file:   translate_dict.py
+#	new file:   update_data.py
+#
